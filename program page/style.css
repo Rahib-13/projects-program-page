@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: border-box !important;
   text-decoration: none;
   font-family: "Raleway", sans-serif;
 }
@@ -26,6 +26,11 @@ aside .mathquiz {
   flex-direction: column;
   align-items: center;
   padding: 45px 0px;
+}
+aside .mathquiz .mezahir {
+  width: 100x;
+  height: 100px;
+  display: block;
 }
 aside .mathquiz h1 {
   color: white;
@@ -81,6 +86,7 @@ aside .online {
   height: 500px;
   background-color: #30333d;
   height: auto;
+  position: relative;
 }
 aside .online header {
   width: 100%;
@@ -90,6 +96,8 @@ aside .online header {
   justify-content: space-between;
   padding: 0px 30px;
   align-items: center;
+  position: sticky;
+  top: 0;
   color: white;
 }
 aside .online header div {
@@ -153,7 +161,7 @@ aside .online form select {
   padding: 5px;
   outline: none;
 }
-aside .online #main {
+aside .online #main2 {
   display: flex;
   width: 100%;
   height: auto;
@@ -161,23 +169,23 @@ aside .online #main {
   gap: 20px;
   padding: 20px;
 }
-aside .online #main .cards {
+aside .online #main2 .cards {
   width: 23%;
   height: auto;
   color: white;
   background-color: rgb(43, 42, 42);
   border-radius: 8px;
-  height: 300px;
+  height: auto;
   box-sizing: border-box !important;
 }
-aside .online #main .cards .qedes {
+aside .online #main2 .cards .qedes {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
 }
-aside .online #main .cards main {
+aside .online #main2 .cards main {
   display: flex;
   width: 100%;
   justify-content: space-between;
@@ -185,25 +193,26 @@ aside .online #main .cards main {
   font-weight: 600;
   padding: 0px 10px;
 }
-aside .online #main .cards .descript {
+aside .online #main2 .cards .descript {
   font-weight: 700;
   margin-top: 10px;
   color: white;
   padding: 0px 10px;
 }
-aside .online #main .cards .free {
+aside .online #main2 .cards .free {
   text-align: right;
   margin-top: 15px;
   padding: 0px 10px;
 }
-aside .online #main .cards .buttons {
+aside .online #main2 .cards .buttons {
   display: flex;
   gap: 10px;
   justify-content: center;
   margin-top: 15px;
   padding: 0px 10px;
+  margin-bottom: 20px;
 }
-aside .online #main .cards .buttons button {
+aside .online #main2 .cards .buttons button {
   width: 100px;
   height: 30px;
   border: none;
@@ -211,28 +220,28 @@ aside .online #main .cards .buttons button {
   border-radius: 8px;
   transition: 0.5s all;
 }
-aside .online #main .cards .buttons button a {
+aside .online #main2 .cards .buttons button a {
   color: white;
 }
-aside .online #main .cards .buttons button:nth-child(1) {
+aside .online #main2 .cards .buttons button:nth-child(1) {
   background-color: rgb(103, 90, 240);
 }
-aside .online #main .cards .buttons button:nth-child(1):hover {
+aside .online #main2 .cards .buttons button:nth-child(1):hover {
   background-color: transparent;
   border: 1px solid rgb(103, 90, 240);
   transform: scale(1.1);
 }
-aside .online #main .cards .buttons button:nth-child(1):hover a {
+aside .online #main2 .cards .buttons button:nth-child(1):hover a {
   color: rgb(103, 90, 240);
 }
-aside .online #main .cards .buttons button:nth-child(2) {
+aside .online #main2 .cards .buttons button:nth-child(2) {
   border: 1px solid white;
 }
-aside .online #main .cards .buttons button:nth-child(2):hover {
+aside .online #main2 .cards .buttons button:nth-child(2):hover {
   border: none;
   transform: scale(1.1);
   background-color: rgb(103, 90, 240);
 }
-aside .online #main .cards .buttons button:nth-child(2):hover a {
+aside .online #main2 .cards .buttons button:nth-child(2):hover a {
   color: white;
 }/*# sourceMappingURL=style.css.map */
